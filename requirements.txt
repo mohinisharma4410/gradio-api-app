@@ -1,0 +1,10 @@
+pdfplumber
+chromadb
+sentence-transformers
+google-generativeai
+gradio
+pillow
+numpy
+langdetect
+fastapi
+uvicorn
