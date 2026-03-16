@@ -111,8 +111,10 @@ def process_pdf():
 
     total_images = len(figure_mapping)
     return len(chunks), total_images, images_by_page, text_by_page, figure_mapping
-
-num_text, num_images, images_by_page, text_by_page, figure_mapping = process_pdf()
+if collection.count() == 0:
+    num_text, num_images, images_by_page, text_by_page, figure_mapping = process_pdf()
+else:
+    num_text, num_images, images_by_page, text_by_page, figure_mapping = 0,0,{}, {}, {}
 print(f"\n✅ PDF processed: {num_text} text chunks + {num_images} figure pages saved.")
 print(f"📊 Figure mapping: {len(figure_mapping)} figures mapped")
 if figure_mapping:
