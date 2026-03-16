@@ -1,11 +1,11 @@
+gradio
 pdfplumber
 chromadb
 sentence-transformers
-google-generativeai
-gradio
+pydub
 pillow
 numpy
 langdetect
-fastapi
-pydub
-uvicorn
+nest_asyncio
+openai
+torch
