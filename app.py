@@ -289,9 +289,11 @@ with gr.Blocks(css=custom_css) as demo:
     send_btn.click(ask_rag, [text_input, audio_input, chatbot], [chatbot])
     text_input.submit(ask_rag, [text_input, audio_input, chatbot], [chatbot])
     clear_btn.click(lambda: [], None, chatbot, queue=False)
-port = int(os.environ.get("PORT", 7860))
 
-demo.queue().launch(
-    server_name="0.0.0.0",
-    server_port=port
-)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 7860))
+
+    demo.queue().launch(
+        server_name="0.0.0.0",
+        server_port=port
+    )
