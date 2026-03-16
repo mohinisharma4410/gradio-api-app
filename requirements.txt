@@ -7,4 +7,5 @@ pillow
 numpy
 langdetect
 fastapi
+pydub
 uvicorn
