@@ -8,4 +8,6 @@ numpy
 langdetect
 nest_asyncio
 openai
+transformers
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
